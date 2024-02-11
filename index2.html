@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style2.css" />
+    <title>my calculator</title>
+  </head>
+  <body>
+    <div class="calculator">
+      <input id="screen" class="screen" type="text" placeholder="0" readonly />
+      <div id="buttons">
+        <button onclick="CLEAR('c')" style="color: red">C</button>
+        <button onclick="del('')" style="color: rgb(255, 128, 0)">del</button>
+        <button onclick="ShowToscreen('%')" style="color: aqua">%</button>
+        <button onclick="ShowToscreen('/')" style="color: aqua">/</button>
+        <button onclick="ShowToscreen('7')">7</button>
+        <button onclick="ShowToscreen('8')">8</button>
+        <button onclick="ShowToscreen('9')">9</button>
+        <button onclick="ShowToscreen('*')" style="color: aqua">*</button>
+        <button onclick="ShowToscreen('4')">4</button>
+        <button onclick="ShowToscreen('5')">5</button>
+        <button onclick="ShowToscreen('6')">6</button>
+        <button onclick="ShowToscreen('-')" style="color: aqua">-</button>
+        <button onclick="ShowToscreen('1')">1</button>
+        <button onclick="ShowToscreen('2')">2</button>
+        <button onclick="ShowToscreen('3')">3</button>
+        <button onclick="ShowToscreen('+')" style="color: aqua">+</button>
+        <button onclick="ShowToscreen('()')" style="color: aqua">()</button>
+        <button onclick="ShowToscreen('0')">0</button>
+        <button onclick="ShowToscreen('.')">.</button>
+        <button
+          onclick="Calutate()"
+          style="background-color: aqua; color: white"
+        >
+          =
+        </button>
+      </div>
+    </div>
+    <script src="script1.js"></script>
+  </body>
+</html>
